@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 1.3rem;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.done-by-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.done-by-link a {
+  color: var(--secondary-color);
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input::placeholder {
+  padding: 1rem;
+}
+
+button {
+  color: black;
+  padding: 1rem 1.5rem;
+}
