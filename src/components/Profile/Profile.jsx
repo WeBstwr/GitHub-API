@@ -5,6 +5,7 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 import { HiUserGroup } from "react-icons/hi";
 import { LuGitFork } from "react-icons/lu";
 import { FaStar } from "react-icons/fa6";
+import profImg from "../../assets/wp1.jpg";
 
 const GitIcon = ({ icon }) => {
   return (
@@ -50,7 +51,7 @@ const Profile = () => {
             <GitSocials icon={<HiUserGroup />} label={"0 following"} />
           </div>
         </div>
-        <div className="main-repo-contaoiner">
+        <div className="main-repo-container">
           <div className="repo-heading">
             <h2>repositories(30)</h2>
           </div>
@@ -139,6 +140,55 @@ const Profile = () => {
                 <GitSocials icon={<FaStar />} label={"819 stars"} />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="main-follower-container">
+        <div className="repo-heading">
+          <h2>followeres(30)</h2>
+        </div>
+
+        <div className="followers-container">
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
+          </div>
+
+          <div className="follower">
+            <img src={profImg} alt="" />
+            <h3>username</h3>
+            <button>viewUser</button>
           </div>
         </div>
       </div>
