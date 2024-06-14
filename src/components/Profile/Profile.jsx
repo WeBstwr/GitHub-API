@@ -3,6 +3,8 @@ import { FaGithubSquare } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RiGitRepositoryFill } from "react-icons/ri";
 import { HiUserGroup } from "react-icons/hi";
+import { LuGitFork } from "react-icons/lu";
+import { FaStar } from "react-icons/fa6";
 
 const GitIcon = ({ icon }) => {
   return (
@@ -22,27 +24,125 @@ const GitSocials = ({ icon, label }) => {
 };
 const Profile = () => {
   return (
-    <div className="profile">
-      <div className="profile-icon">
-        <GitIcon icon={<FaGithubSquare />} />
-      </div>
-      <div className="title">
-        <h2>GitHub</h2>
-        <p className="github">github</p>
-        <p>How people build software.</p>
-      </div>
-      <button>view on github</button>
+    <>
+      <div className="profile-container">
+        <div className="profile">
+          <div className="profile-icon">
+            <GitIcon icon={<FaGithubSquare />} />
+          </div>
+          <div className="title">
+            <h2>GitHub</h2>
+            <p className="github">github</p>
+            <p>How people build software.</p>
+          </div>
+          <button>view on github</button>
 
-      <div className="git-social">
-        <GitSocials
-          icon={<MdOutlineLocationOn />}
-          label={"San Francisco, CA"}
-        />
-        <GitSocials icon={<RiGitRepositoryFill />} label={"493 repositories"} />
-        <GitSocials icon={<HiUserGroup />} label={"39518 followers"} />
-        <GitSocials icon={<HiUserGroup />} label={"0 following"} />
+          <div className="git-social">
+            <GitSocials
+              icon={<MdOutlineLocationOn />}
+              label={"San Francisco, CA"}
+            />
+            <GitSocials
+              icon={<RiGitRepositoryFill />}
+              label={"493 repositories"}
+            />
+            <GitSocials icon={<HiUserGroup />} label={"39518 followers"} />
+            <GitSocials icon={<HiUserGroup />} label={"0 following"} />
+          </div>
+        </div>
+        <div className="main-repo-contaoiner">
+          <div className="repo-heading">
+            <h2>repositories(30)</h2>
+          </div>
+
+          <div className="repositories-container">
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+
+            <div className="repos">
+              <div className="repo-title">
+                <h3>github</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ad!
+                </p>
+              </div>
+              <div className="repo-rating">
+                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
+                <GitSocials icon={<FaStar />} label={"819 stars"} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
