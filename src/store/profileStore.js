@@ -28,8 +28,11 @@ const useProfileStore = create((set) => ({
 
       set({ userProfile, repositories, followers, following, loading: false });
     } catch (error) {
-      console.error("Failed to fetch profile data", error);
-      set({ loading: false });
+      set({
+        error: "Failed to load profile data. Try again latetr",
+        loading: false,
+      });
+      console.log("Failed to load profile data. Try again latetr", error);
     }
   },
 }));

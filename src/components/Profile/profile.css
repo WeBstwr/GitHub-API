@@ -50,6 +50,7 @@
   text-transform: capitalize;
   margin-top: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 .git-socials {
