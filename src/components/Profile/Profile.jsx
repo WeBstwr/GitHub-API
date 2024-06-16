@@ -1,19 +1,11 @@
 import "./profile.css";
-import { FaGithubSquare } from "react-icons/fa";
+import profImag from "../../assets/gitWp.jpg";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RiGitRepositoryFill } from "react-icons/ri";
 import { HiUserGroup } from "react-icons/hi";
 import { LuGitFork } from "react-icons/lu";
 import { FaStar } from "react-icons/fa6";
 import profImg from "../../assets/wp1.jpg";
-
-const GitIcon = ({ icon }) => {
-  return (
-    <div className="git-icon">
-      <div className="git-icon-wrapper">{icon}</div>
-    </div>
-  );
-};
 
 const GitSocials = ({ icon, label }) => {
   return (
@@ -28,8 +20,8 @@ const Profile = () => {
     <>
       <div className="profile-container">
         <div className="profile">
-          <div className="profile-icon">
-            <GitIcon icon={<FaGithubSquare />} />
+          <div className="profile-image">
+            <img src={profImag} alt="profile" />
           </div>
           <div className="title">
             <h2>GitHub</h2>
@@ -70,76 +62,6 @@ const Profile = () => {
                 <GitSocials icon={<FaStar />} label={"819 stars"} />
               </div>
             </div>
-
-            <div className="repos">
-              <div className="repo-title">
-                <h3>github</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur, ad!
-                </p>
-              </div>
-              <div className="repo-rating">
-                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
-                <GitSocials icon={<FaStar />} label={"819 stars"} />
-              </div>
-            </div>
-
-            <div className="repos">
-              <div className="repo-title">
-                <h3>github</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur, ad!
-                </p>
-              </div>
-              <div className="repo-rating">
-                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
-                <GitSocials icon={<FaStar />} label={"819 stars"} />
-              </div>
-            </div>
-
-            <div className="repos">
-              <div className="repo-title">
-                <h3>github</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur, ad!
-                </p>
-              </div>
-              <div className="repo-rating">
-                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
-                <GitSocials icon={<FaStar />} label={"819 stars"} />
-              </div>
-            </div>
-
-            <div className="repos">
-              <div className="repo-title">
-                <h3>github</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur, ad!
-                </p>
-              </div>
-              <div className="repo-rating">
-                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
-                <GitSocials icon={<FaStar />} label={"819 stars"} />
-              </div>
-            </div>
-
-            <div className="repos">
-              <div className="repo-title">
-                <h3>github</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur, ad!
-                </p>
-              </div>
-              <div className="repo-rating">
-                <GitSocials icon={<LuGitFork />} label={"2363 forks"} />
-                <GitSocials icon={<FaStar />} label={"819 stars"} />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -154,37 +76,14 @@ const Profile = () => {
             <h3>username</h3>
             <button>viewUser</button>
           </div>
+        </div>
+      </div>
+      <div className="main-follower-container">
+        <div className="repo-heading">
+          <h2>following(30)</h2>
+        </div>
 
-          <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
-            <button>viewUser</button>
-          </div>
-
-          <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
-            <button>viewUser</button>
-          </div>
-
-          <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
-            <button>viewUser</button>
-          </div>
-
-          <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
-            <button>viewUser</button>
-          </div>
-
-          <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
-            <button>viewUser</button>
-          </div>
-
+        <div className="followers-container">
           <div className="follower">
             <img src={profImg} alt="" />
             <h3>username</h3>
