@@ -48,7 +48,7 @@ const Profile = () => {
             <p className="github">{userProfile.login}</p>
             <p>{userProfile.bio}</p>
           </div>
-          <button onClick={() => window.open(userProfile.html_url, _blank)}>
+          <button onClick={() => window.open(userProfile.html_url, "_blank")}>
             view on github
           </button>
 
@@ -118,8 +118,8 @@ const Profile = () => {
 
         <div className="followers-container">
           <div className="follower">
-            <img src={profImg} alt="" />
-            <h3>username</h3>
+            <img src={following.following_url} alt="followinf profile" />
+            <h3>{following.name}</h3>
             <button>viewUser</button>
           </div>
         </div>
